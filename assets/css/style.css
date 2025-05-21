@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #143c3c;
+    --primary-color-black: #152427;
     --secondary-color: #e2eddf;
 }
 
@@ -43,7 +44,7 @@ a {
 }
 
 .btn:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 /* Header */
@@ -112,4 +113,152 @@ a {
 
 .action__btn {
     margin-left: 69px;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    padding: 60px 0 53px;
+}
+
+.hero__body {
+    display: flex;
+}
+
+/* Hero__content */
+.hero__heading {
+    margin-top: 43px;
+    max-width: 368px;
+    color: var(--primary-color-black);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2; /* 120% */
+}
+
+.hero__desc {
+    max-width: 341px;
+    margin-top: 20px;
+    color: #575d5e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56; /* 155.556% */
+}
+
+.hero__row {
+    display: flex;
+    margin-top: 42px;
+}
+
+.hero__cta {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 43px;
+}
+
+.hero__cta:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.hero__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #83a17d;
+}
+
+.hero__curve {
+    position: absolute;
+    left: -7px;
+}
+
+.hero__link-play {
+    margin-left: 15px;
+    color: #152427;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+    transition: 0.25s;
+}
+
+.hero__link-play:hover {
+    text-decoration: underline;
+}
+
+/* Hero__media */
+.hero__media {
+    position: relative;
+    margin-left: 76px;
+}
+
+.hero__images {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hero__img {
+    width: 202px;
+    height: 466px;
+    object-fit: cover;
+    border-radius: 110px;
+}
+
+.hero__img:nth-child(2) {
+    margin-top: 77px;
+}
+
+.hero__circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: #4dbb9a;
+    filter: blur(137px);
+    z-index: -1;
+}
+
+/* Hero__decorate*/
+.hero__flower,
+.hero__path,
+.hero__path-under,
+.hero__flower-under {
+    position: absolute;
+}
+
+.hero__flower {
+    top: 36px;
+    left: 443px;
+    z-index: 1;
+}
+
+.hero__path {
+    top: 28px;
+    left: 485px;
+}
+
+.hero__path-under--rotate-180,
+.hero__flower-under--rotate-180 {
+    transform: scale(-1, -1);
+}
+
+.hero__flower-under {
+    bottom: 0;
+    right: 225px;
+    z-index: 1;
+}
+
+.hero__path-under {
+    bottom: -10px;
+    right: 265px;
 }
