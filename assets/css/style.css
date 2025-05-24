@@ -15,7 +15,7 @@ html {
 body {
     position: relative;
     font-size: 1.6rem;
-    font-family: "Public Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Common */
@@ -47,8 +47,55 @@ a {
     opacity: 0.8;
 }
 
+.label {
+    position: relative;
+    margin-left: 46px;
+    color: var(--primary-color-black);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63; /* 162.5% */
+}
+
+.label::before {
+    position: absolute;
+    left: -46px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: var(--primary-color-black);
+}
+
+.heading-lv2 {
+    position: relative;
+    color: var(--primary-color-black);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.heading-lv2::after {
+    position: absolute;
+    bottom: 19px;
+    right: 20%;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: var(--primary-color-black);
+}
+
+.heading-lv3 {
+    color: var(--primary-color-black);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
 /* Header */
 .header {
+    font-family: "Public Sans";
     padding: 28px 0 13px;
 }
 
@@ -119,6 +166,7 @@ a {
 .hero {
     position: relative;
     padding: 60px 0 88px;
+    font-family: "Public Sans";
 }
 
 .hero__body {
@@ -287,7 +335,6 @@ a {
 
 .logo__link {
     color: var(--primary-color);
-    font-family: Poppins;
 }
 
 .logo__item:nth-child(1) .logo__link {
@@ -318,4 +365,51 @@ a {
     font-size: 1.9rem;
     font-weight: 600;
     letter-spacing: 1.995px;
+}
+
+/* Service */
+.service {
+    padding: 53px 0 77px;
+}
+
+.service__heading-lv2 {
+    margin-top: 12px;
+    max-width: 520px;
+}
+
+.service__list {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 76px;
+}
+
+.service-item {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.service-item__body {
+    padding: 24px 0 24px 18px;
+}
+
+.service-item:hover {
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service-item__img {
+    display: block;
+    width: 370px;
+    height: 318px;
+    object-fit: cover;
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    max-width: 268px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
 }
