@@ -93,6 +93,11 @@ a {
     line-height: 1; /* 100% */
 }
 
+.path,
+.flower {
+    position: absolute;
+}
+
 /* Header */
 .header {
     font-family: "Public Sans";
@@ -277,13 +282,6 @@ a {
 }
 
 /* Hero__decorate*/
-.hero__flower,
-.hero__path,
-.hero__path-under,
-.hero__flower-under {
-    position: absolute;
-}
-
 .hero__flower {
     top: 36px;
     left: 443px;
@@ -408,6 +406,233 @@ a {
 .service-item__desc {
     margin-top: 18px;
     max-width: 268px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
+}
+
+/* About */
+.about {
+    padding-top: 77px;
+}
+
+.about__body {
+    display: flex;
+}
+
+/* About__media */
+.about__media {
+    position: relative;
+    margin-top: 13px;
+}
+
+.about__images {
+    display: flex;
+    column-gap: 21px;
+}
+
+.about__img {
+    width: 284px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 210px;
+}
+
+.about__image:first-child {
+    margin-top: 77px;
+}
+
+/* About decoration */
+.about__circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    filter: blur(137px);
+    background: #83a17d;
+}
+
+.about__path {
+    top: 15px;
+    left: 90px;
+}
+
+.about__flower {
+    transform: scaleY(-1);
+    top: -32px;
+    left: 46px;
+    z-index: 1;
+}
+
+/* About card */
+.about-card {
+    position: absolute;
+    bottom: 8px;
+    right: -9px;
+    padding: 19px 23px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+    font-family: "Public Sans";
+}
+
+.about-card__title {
+    color: var(--primary-color-black);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.about-card__desc {
+    margin-top: 6px;
+    color: #575d5e;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4; /* 140% */
+}
+
+.about-card__value {
+    color: var(--primary-color-black);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+}
+
+.about-card__bar {
+    margin-top: 3px;
+    max-width: 96px;
+    height: 2px;
+    border-radius: 10px;
+    background: #eaeaea;
+}
+
+.about-card__bar--progress {
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background: #83a17d;
+}
+
+.about-card__loading {
+    margin-top: 3px;
+    text-align: right;
+    color: var(--primary-color-black);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+}
+
+.about-card__inner-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #143c3c;
+}
+
+.about-card__outer-dot {
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #eaeaea;
+}
+
+.about-card__row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.about-card__label {
+    color: var(--primary-color-black);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+}
+
+.about-card__avatars {
+    margin-left: 30px;
+}
+
+.about-card__avt {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-left: -10px;
+}
+
+.about-card__avt:first-child {
+    margin-left: 0;
+}
+
+/* About__content */
+.about__content {
+    margin-left: 64px;
+}
+
+.about__heading {
+    margin-top: 20px;
+    max-width: 483px;
+}
+
+.about__heading::after {
+    display: none;
+}
+
+.about__desc {
+    margin-top: 11px;
+    color: #7d8188;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63; /* 162.5% */
+}
+
+.about__countdown {
+    margin-top: 36px;
+}
+
+.about-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.about-row:last-child {
+    margin-top: 58px;
+}
+
+.about-row::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #83a17d;
+    bottom: -20px;
+}
+
+.about-row__number {
+    color: var(--primary-color-black);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.about-row__desc {
+    margin-left: 24px;
+    max-width: 364px;
     color: #7d8188;
     font-size: 1.4rem;
     font-weight: 500;
