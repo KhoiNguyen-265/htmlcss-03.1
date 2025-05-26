@@ -6,6 +6,7 @@
     --primary-color: #143c3c;
     --primary-color-black: #152427;
     --secondary-color: #e2eddf;
+    --text-color-gray: #7d8188;
 }
 
 html {
@@ -410,7 +411,7 @@ a {
 .service-item__desc {
     margin-top: 18px;
     max-width: 268px;
-    color: #7d8188;
+    color: var(--text-color-gray);
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.71; /* 171.429% */
@@ -598,7 +599,7 @@ a {
 
 .about__desc {
     margin-top: 11px;
-    color: #7d8188;
+    color: var(--text-color-gray);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.63; /* 162.5% */
@@ -637,7 +638,7 @@ a {
 .about-row__desc {
     margin-left: 24px;
     max-width: 364px;
-    color: #7d8188;
+    color: var(--text-color-gray);
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.71; /* 171.429% */
@@ -744,7 +745,7 @@ a {
 .process-row__desc {
     margin-left: 175px;
     width: 50%;
-    color: #7d8188;
+    color: var(--text-color-gray);
     font-family: "Public Sans";
     font-size: 1.8rem;
     font-weight: 500;
@@ -849,4 +850,83 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Features */
+.features {
+    padding: 70px 0 92px;
+    margin-top: 70px;
+}
+
+.features__heading {
+    margin: 0 auto;
+    color: var(--primary-color-black);
+    text-align: center;
+    max-width: 520px;
+}
+
+.features__heading::after {
+    display: none;
+}
+
+.features__desc {
+    max-width: 547px;
+    margin: 20px auto 0;
+    color: var(--text-color-gray);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63; /* 162.5% */
+    text-align: center;
+}
+
+.features__list {
+    display: flex;
+    column-gap: 45px;
+    margin-top: 103px;
+}
+
+.features-item {
+    justify-items: center;
+    width: 100%;
+    padding: 60px 43px 74px;
+    border-radius: 160px;
+    border: 1.5px solid #cecece;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.features-item:first-child {
+    padding: 60px 33px 74px 33px;
+}
+
+.features-item:hover {
+    border: transparent;
+    box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+    transform: translateY(-59px);
+}
+
+.features-item__icon {
+    color: var(--primary-color);
+}
+
+.features-item__title {
+    margin-top: 23px;
+    color: #152427;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.features-item__desc {
+    margin-top: 12px;
+    width: 264px;
+    color: var(--text-color-gray);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
+}
+
+.features-item:first-child .features-item__desc {
+    width: 284px;
 }
