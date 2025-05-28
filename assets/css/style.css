@@ -890,6 +890,16 @@ a {
     justify-content: center;
 }
 
+.project__path {
+    top: -165px;
+    right: -50px;
+}
+
+.project__flower {
+    top: -80px;
+    right: -50px;
+}
+
 /* Features */
 .features {
     padding: 70px 0 92px;
